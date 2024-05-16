@@ -10,3 +10,6 @@ SELECT COUNT(id) AS `numero_insegnanti`, `office_address` AS `ufficio` FROM `tea
 SELECT `exam_id`, AVG(`vote`) AS `media_voto` FROM `exam_student` GROUP BY `exam_id`;
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+SELECT COUNT(`name`)AS `numero_corsi`, `department_id` AS `dipartimento` FROM `degrees` GROUP BY `dipartimento`;
+
+
